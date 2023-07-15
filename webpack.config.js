@@ -5,14 +5,10 @@ const path = require('path');
 module.exports = {
     entry : ['babel-polyfill','./src/js/index.js'],
     output: {
-        path :path.resolve(__dirname,'docs'),
-        filename : 'js/bundel.js'
+        path :path.resolve(__dirname,'dist'),
+        filename: 'js/bundle.js'
     },
     devServer: {
-        static: {
-            directory: path.join(__dirname, './dist'),
-        },
-        compress: true,
         port: 3000,
   },
   plugins: [

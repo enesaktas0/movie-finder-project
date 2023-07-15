@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
     entry : ['babel-polyfill','./src/js/index.js'],
     output: {
-        path :path.resolve(__dirname,'dist'),
+        path :path.resolve(__dirname,'docs'),
         filename : 'js/bundel.js'
     },
     devServer: {
@@ -18,7 +18,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
         filename: 'index.html',
-        template: './src/index.html'
+        template: './index.html'
     })
   ],
   module: {

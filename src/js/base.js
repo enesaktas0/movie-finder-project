@@ -8,7 +8,8 @@ export const elements = {
     details: document.querySelector('#details'),
     detailContainer: document.querySelector('.detail-container'),
     moveiListContainer: document.querySelector('.movei-list-container'),
-    movieListCard: document.querySelector('#movie-list-card')
+    movieListCard: document.querySelector('#movie-list-card'),
+    quary: document.querySelector('#quary')
 }
 
 export const sizeofImagies = {

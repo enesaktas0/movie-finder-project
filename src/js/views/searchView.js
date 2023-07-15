@@ -6,9 +6,7 @@ const search = new Search(elements.txtKeyword.value);
 export const showMovies = (data , pageNumber , keyword) => {
     elements.results.innerHTML = '';
     let header = `
-        <div class="card-header">
-            <span>With the query '${keyword}', ${data.total_results} results were found. </span>
-        </div>
+        <span>With the query '${keyword}', ${data.total_results} results were found. </span>
     `
     data.results.forEach(movie => {
         let html='';
@@ -42,7 +40,7 @@ export const showMovies = (data , pageNumber , keyword) => {
         elements.results.innerHTML += html;
     });
 
-    elements.movieListCard.insertAdjacentHTML('beforebegin',header);
+    elements.quary.innerHTML = header;
     
     showButtons(pageNumber,data);
     
